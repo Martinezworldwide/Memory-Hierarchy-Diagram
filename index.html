@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Hierarchy Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .memory-box {
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #registers { background-color: #ffcccc; }
+        #cache { background-color: #ffdd99; }
+        #ram { background-color: #ffff99; }
+        #ssd { background-color: #ccffcc; }
+        #hdd { background-color: #ccccff; }
+        .info-box {
+            margin-top: 20px;
+            padding: 10px;
+            width: 60%;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Memory Hierarchy Diagram</h2>
+    <div class="container">
+        <div id="registers" class="memory-box">Registers (Fastest, Smallest Size, Inside CPU)</div>
+        <div id="cache" class="memory-box">Cache (L1, L2, L3 - Stores Frequent Data for CPU)</div>
+        <div id="ram" class="memory-box">RAM (Main Memory, Temporary Storage for Programs)</div>
+        <div id="ssd" class="memory-box">SSD (Fast Non-Volatile Storage, Used for OS & Apps)</div>
+        <div id="hdd" class="memory-box">HDD (Slowest, Largest Capacity, Long-Term Storage)</div>
+    </div>
+
+    <div class="info-box">
+        <p><strong>Registers:</strong> Smallest and fastest memory, directly inside CPU.</p>
+        <p><strong>Cache:</strong> Stores frequently used data for quick CPU access.</p>
+        <p><strong>RAM:</strong> Holds active processes and running applications.</p>
+        <p><strong>SSD:</strong> Faster than HDD, used for primary system storage.</p>
+        <p><strong>HDD:</strong> Slowest storage, but offers large capacity for files.</p>
+    </div>
+
+</body>
+</html>
